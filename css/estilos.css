@@ -288,7 +288,7 @@ font-family: 'Raleway', sans-serif;
 }
 @media only screen and (max-width: 320px) {
   .redaccion_h2 {
-    font-size: 1em;
+    font-size: 1.2em;
   }
 
   .edicion__h2 {
@@ -386,6 +386,16 @@ font-family: 'Raleway', sans-serif;
   line-height: 1.5;
 }
 
+@media only screen and (max-width: 500px) {
+  .textoResenas h3 {
+    font-size: 1.5em;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .textoResenas h3 {
+    font-size: 1em;
+  }
+}
 .bannerContacto {
   background-image: url(../imagenes/portadas/portada-contacto.png);
   background-repeat: no-repeat;

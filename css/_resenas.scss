@@ -91,3 +91,14 @@
         }
     }
 }
+
+@media only screen and (max-width:500px){
+    .textoResenas h3{
+        font-size: 1.5em;
+    }
+}
+@media only screen and (max-width:320px){
+    .textoResenas h3{
+        font-size: 1em;
+    }
+}
