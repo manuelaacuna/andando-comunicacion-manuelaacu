@@ -16,6 +16,7 @@ font-family: 'Raleway', sans-serif;
 
 .trayectoria {
   margin-bottom: 70px;
+  padding: 15px;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -29,6 +30,7 @@ font-family: 'Raleway', sans-serif;
   text-align: center;
   line-height: 1.5;
   padding: 10px;
+  display: inline-block;
 }
 .trayectoria .trayectoria__p {
   color: #000000;
@@ -43,7 +45,6 @@ font-family: 'Raleway', sans-serif;
 .trayectoria .trayectoria__quoteTrayectoria {
   border: 3px solid #f69579;
   border-radius: 10px;
-  margin: 10px;
   margin-bottom: 20px;
   padding: 10px;
   color: #f69579;
@@ -548,6 +549,40 @@ font-family: 'Raleway', sans-serif;
   margin-right: 50px;
 }
 
+.botonHablemos {
+  background-color: #973a5e;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3em;
+  line-height: 1.5;
+  border-radius: 100px;
+  border-style: hidden;
+  transition: ease-in 0.2s;
+  padding: 10px 25px 10px 25px;
+}
+
+.botonHablemos a {
+  background-color: linear-gradient(90deg, #220410 40%, #973a5e);
+}
+
+.botonHablemos:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24);
+  background-color: #ad607e;
+  color: #ececec;
+  font-weight: 600;
+}
+
+.hablemosicon {
+  padding: 3px;
+}
+
+a {
+  background-color: linear-gradient(90deg, #220410 40%, #973a5e);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -638,35 +673,6 @@ body {
   text-align: left;
   line-height: 1.5;
   filter: drop-shadow(5px 5px 10px white);
-}
-.tituloDePagina .botonHablemos {
-  background-color: #973a5e;
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.3em;
-  line-height: 1.5;
-  border-radius: 100px;
-  border-style: hidden;
-  transition: ease-in 0.2s;
-  padding: 10px 25px 10px 25px;
-}
-.tituloDePagina .botonHablemos a {
-  background-color: linear-gradient(90deg, #220410 40%, #973a5e);
-}
-.tituloDePagina .botonHablemos:hover {
-  transform: scale(1.05);
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24);
-  background-color: #ad607e;
-  color: #ececec;
-  font-weight: 600;
-}
-.tituloDePagina .hablemosicon {
-  padding: 3px;
-}
-.tituloDePagina a {
-  background-color: linear-gradient(90deg, #220410 40%, #973a5e);
 }
 
 @media only screen and (max-width: 500px) {

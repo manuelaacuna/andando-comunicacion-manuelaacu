@@ -26,6 +26,7 @@ $font-montserrat: 'Montserrat', sans-serif;
 @import "resenas";
 @import "contacto";
 @import "inicio";
+@import "botones";
 
 // Generales
 *{
@@ -118,39 +119,8 @@ body {
         line-height: 1.5;
         filter: drop-shadow(5px 5px 10px rgb(255, 255, 255));
     }
-
-    // BOTÓN HABLEMOS
-.botonHablemos {
-    background-color: $violeta;
-    color: white;
-    font-family: $font-montserrat;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.3em;
-    line-height: 1.5;
-    border-radius: 100px;
-    border-style: hidden;
-    transition: ease-in .2s;
-    padding: 10px 25px 10px 25px;
-}
-.botonHablemos a{
-    background-color: $violeta-degrade;
-}
-.botonHablemos:hover{
-        transform: scale(1.05);
-        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24);
-        background-color: $violeta-claro;
-        color: $blanco;
-        font-weight: 600;
-    }
-.hablemosicon{
-    padding: 3px;
-}
-a{
-    background-color: $violeta-degrade;
 }
 
-}
 @media only screen and (max-width:500px){
     .tituloDePagina h1{
         font-size: 1.3em;

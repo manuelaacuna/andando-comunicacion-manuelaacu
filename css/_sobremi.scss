@@ -8,6 +8,7 @@
 
 .trayectoria{
     margin-bottom: 70px;
+    padding: 15px;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -20,6 +21,7 @@
         text-align: center;
         line-height: 1.5;
         padding: 10px;
+        display: inline-block;
     }
     .trayectoria__p{
         color: $negro;
@@ -34,7 +36,6 @@
     .trayectoria__quoteTrayectoria{
         border: 3px solid $naranja;
         border-radius: 10px;
-        margin: 10px;
         margin-bottom: 20px;
         padding: 10px;
         color: $naranja;
