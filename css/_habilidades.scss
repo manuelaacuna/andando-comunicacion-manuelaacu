@@ -138,3 +138,26 @@
         }
     }
 }
+
+@media only screen and (max-width:500px){
+    .redaccion__h2{
+        font-size: 1.5em;
+    }
+    .edicion__h2{
+        font-size: 1.5em;
+    }
+    .fotografia__h2{
+        font-size: 1.5em;
+    }
+}
+@media only screen and (max-width:320px){
+    .redaccion_h2{
+        font-size: 1em;
+    }
+    .edicion__h2{
+        font-size: 1.2em;
+    }
+    .fotografia__h2{
+        font-size: 1.2em;
+    }
+}
