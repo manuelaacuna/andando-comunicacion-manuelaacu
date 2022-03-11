@@ -21,15 +21,11 @@ $font-raleway: 'Raleway', sans-serif;
 $font-montserrat: 'Montserrat', sans-serif;
 
 /* IMPORTADOS */
-@import "header";
-@import "footer";
 @import "sobremi";
 @import "habilidades";
 @import "resenas";
 @import "contacto";
 @import "inicio";
-@import "botones";
-
 
 // Generales
 *{
@@ -40,6 +36,59 @@ $font-montserrat: 'Montserrat', sans-serif;
 
 body {
     background-color: $amarillo-fondo;
+}
+
+.container-fluid{
+    margin: 0;
+    padding: 0;
+}
+
+.row{
+    margin: 0;
+    padding: 0;
+}
+// HEADER
+.navbar{
+    background-color: #973a5e;
+    color: white;
+    width: 100%;
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    text-align: right;
+    padding-left: 25px;
+    padding-right: 25px;
+    .navbar-expand-lg{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+    .nav-link{
+        color: white;
+        text-decoration: none;
+        padding: 10px 5px 0px 5px;
+        display: inline-block;
+        position: relative;
+        margin: 5px;
+    }
+    .nav-link:after{
+        content: "";
+        position: absolute;
+        background-color: $blanco;
+        height: 2px;
+        width: 0;
+        left: 0;
+        bottom: -10px;
+        transition: all 0.3s;
+    }
+    .nav-link:hover{
+        color: $blanco;
+    }
+    .nav-link:hover:after{
+        width: 100%;
+    }
 }
 
 /* Este formato aplica para todos los títulos de los banner principales de cada página */
@@ -69,15 +118,123 @@ body {
         line-height: 1.5;
         filter: drop-shadow(5px 5px 10px rgb(255, 255, 255));
     }
+
+    // BOTÓN HABLEMOS
+.botonHablemos {
+    background-color: $violeta;
+    color: white;
+    font-family: $font-montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3em;
+    line-height: 1.5;
+    border-radius: 100px;
+    border-style: hidden;
+    transition: ease-in .2s;
+    padding: 10px 25px 10px 25px;
+}
+.botonHablemos a{
+    background-color: $violeta-degrade;
+}
+.botonHablemos:hover{
+        transform: scale(1.05);
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24);
+        background-color: $violeta-claro;
+        color: $blanco;
+        font-weight: 600;
+    }
+.hablemosicon{
+    padding: 3px;
+}
+a{
+    background-color: $violeta-degrade;
+}
+
 }
 @media only screen and (max-width:500px){
     .tituloDePagina h1{
         font-size: 1.3em;
+    }
+    .tituloDePagina h3{
+        font-size: 1.1;
     }
  }
 
  @media only screen and (max-width:320px){
     .tituloDePagina h1{
         font-size: 1.1em;
+    }
+    .tituloDePagina h3{
+        font-size: 1;
+    }
+}
+
+// FOOTER
+.footer { 
+    background-image: $violeta-degrade;
+    color: $blanco;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 3em;
+    padding: 10px;
+    h4{
+        font-family: $font-montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.3em;
+        text-align: left;
+        line-height: 1.5;
+        padding: 10px 0px 10px 0px;
+    }
+    .miniBiografia{
+        padding: 1em;
+        p{
+            font-family: $font-raleway;
+            font-style: normal;
+            font-weight: 200;
+            font-size: 1em;
+            text-align: left;
+            line-height: 1.5;
+        }   
+        h3{
+            font-family: $font-raleway;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1em;
+            text-align: left;
+            line-height: 1.5;
+        }
+    }
+
+    .nuestrasOficinas{
+        padding: 1em;
+        overflow: hidden;
+    }
+
+    .seguime{
+        padding: 1em;
+        img{
+            padding-right: 20px;
+            transition: ease-in .2s;
+        }
+        img:hover{
+            transform: scale(1.08);
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24)
+        }
+    }
+}
+.copyright{
+    background-color: $violeta-claro;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    justify-items: center;
+    h3{
+        color: $blanco;
+        font-family: $font-raleway;
+        font-size: 0.8em;
+        padding-top: 5px;
+        padding-bottom: 10px;
     }
 }
