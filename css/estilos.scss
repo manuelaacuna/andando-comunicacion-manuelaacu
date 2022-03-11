@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Raleway:wght@300;700&display=swap');
+
+/* 
+FONT FAMILYS
+font-family: 'Montserrat', sans-serif;
+font-family: 'Raleway', sans-serif; 
+*/
+
+// VARIABLES
+// Colores
+$violeta: #973a5e;
+$violeta-degrade: linear-gradient(90deg, #220410 40%,#973a5e); 
+$violeta-claro: #ad607e;
+$naranja:#f69579;
+$amarillo-fondo: rgb(255, 238, 224);
+$blanco: #ececec;
+$arena: #fac5a4;
+$negro: #000000;
+//Tipografías
+$font-raleway: 'Raleway', sans-serif;
+$font-montserrat: 'Montserrat', sans-serif;
+
+/* IMPORTADOS */
+@import "header";
+@import "footer";
+@import "sobremi";
+@import "habilidades";
+@import "resenas";
+@import "contacto";
+@import "inicio";
+@import "botones";
+
+
+// Generales
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $amarillo-fondo;
+}
+
+/* Este formato aplica para todos los títulos de los banner principales de cada página */
+.tituloDePagina{
+    margin: 0px 20px 70px 20px;
+    padding: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    h1{
+        color: $naranja;
+        font-family: $font-montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 2.5em;
+        text-align: left;
+        text-transform: uppercase;
+        line-height: 1.5;
+        margin-top: 70px;
+        filter: drop-shadow(5px 5px 10px rgb(255, 255, 255));
+    }
+    h3{
+        color: $violeta-claro;
+        font-family: $font-raleway;
+        font-weight: normal;
+        font-size: 1.5em;
+        text-align: left;
+        line-height: 1.5;
+        filter: drop-shadow(5px 5px 10px rgb(255, 255, 255));
+    }
+}
+@media only screen and (max-width:500px){
+    .tituloDePagina h1{
+        font-size: 1.3em;
+    }
+ }
+
+ @media only screen and (max-width:320px){
+    .tituloDePagina h1{
+        font-size: 1.1em;
+    }
+}

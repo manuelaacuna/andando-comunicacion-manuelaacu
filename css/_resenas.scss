@@ -1,0 +1,93 @@
+.bannerResenas{
+    background-image: url(../imagenes/portadas/portada-novedades.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
+    height: 500px;
+}
+
+.contenidoResenas{
+    .articulo1{
+        .imagenArticulo1{
+            background-image: url(../imagenes/reseñas/cine.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 200px; 
+            min-width: 200px;
+            padding-top: 0px;
+        }
+        .imagenArticulo2{
+            background-image: url(../imagenes/reseñas/conferencia.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 200px; 
+            min-width: 200px;
+            padding-top: 0px;
+        }
+        .imagenArticulo3{
+            background-image: url(../imagenes/reseñas/libro.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 200px; 
+            min-width: 200px;
+            padding-top: 0px;
+        }
+        .textoResenas{
+            h3{
+                color: $violeta;
+                font-family: $font-montserrat;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 2em;
+                text-align: left;
+                line-height: 1.5;
+            }
+            p{
+                color: $negro;
+                font-family: $font-raleway;
+                font-style: normal;
+                font-weight: 100;
+                font-size: 1em;
+                text-align: left;
+                line-height: 1.5;
+            }
+        }
+    }
+}
+.top5{
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: inset -4px -4px 7px $blanco, inset 3px 3px 5px rgb(161, 161, 161);
+    .top5Contenido{
+        h3{
+        color: $violeta;
+        font-family: $font-montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.5em;
+        text-align: center;
+        line-height: 1.5;
+        } 
+        ol{
+            list-style-type: decimal;
+            list-style-position: inside;
+            padding: 0px 15px 0px 15px;
+            li{
+                padding-bottom: 10px;
+                font-family: $font-raleway;
+                font-size: 1em;
+                font-weight: 600;
+            }
+        }
+        p{
+            margin-bottom: 20px;
+            color: $negro;
+            font-family: $font-raleway;
+            font-style: normal;
+            font-weight: 200;
+            font-size: 1em;
+            text-align: left;
+            line-height: 1.5;
+        }
+    }
+}

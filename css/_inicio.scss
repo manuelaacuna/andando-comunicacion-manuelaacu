@@ -1,0 +1,109 @@
+.bannerPrincipal{
+    background-image: url(../imagenes/portadas/portada-andando.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
+    height: 500px;
+}
+
+.andamosComunicando{
+    margin-top: 100px;
+    h2{
+        color: #973a5e;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        line-height: 1.5;
+    }
+    p{
+        color: #000000;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 100;
+        line-height: 1.5;
+    }
+}
+.videoPrincipal {
+    padding: 10px;
+    height: 100%;
+}
+.trabajos{
+    margin-top: 70px;
+    h2{
+        color: #973a5e;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        line-height: 1.5;
+        text-align: center;
+        padding: 10px;
+    }
+    .fotosTrabajos .trabajo1 img{
+        transition-timing-function: ease-in-out;
+        border-radius: 10px;
+    }
+    .fotosTrabajos .trabajo1 img:hover{
+        transform: scale(1.1);
+        transition-duration: 0.3s;
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24);
+    }
+    .trabajo1 h3{
+        color: #f69579;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+        padding-top: 20px;
+    }
+}
+/* Experiencia */
+.experiencia{
+    margin-top: 100px;
+    margin-bottom: 70px;
+    .alineacionCarrusel{
+        width: 100%;
+        display: flex;
+        justify-content: center;   
+    }
+    .experienciaOpinion{
+        display: inline-block;
+        margin-bottom: 50px;
+        border: 3px #973a5e solid;
+        padding: 15px;
+        width: 75%;
+        p{
+            color: #000000;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 200;
+            line-height: 1.5;
+            text-align: center;
+            display: block;
+            margin: 15px;
+        }
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 15px;
+        }
+    }
+    .carousel-item{
+        text-align: center;
+    }
+    h2{
+        color: #973a5e;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        text-align: center;
+        line-height: 1.5;
+        margin-bottom: 50px;
+    }
+    .carousel-indicators{
+        li{
+            background-color: #f69579;
+            border-radius: 20px;
+            height: 5px;
+        }
+    }
+    .carousel-control-next{
+        margin-left: 50px;
+    }
+    .carousel-control-prev{
+        margin-right: 50px;
+    }
+}

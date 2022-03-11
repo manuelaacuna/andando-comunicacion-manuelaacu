@@ -1,0 +1,81 @@
+.bannerContacto{
+    background-image: url(../imagenes/portadas/portada-contacto.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
+    height: 500px;
+}
+.formularioContacto{
+    fieldset{
+        background-color: rgb(255, 255, 255);
+        border-radius: 15px;
+        box-shadow: -4px -4px 7px $blanco, 3px 3px 5px rgb(161, 161, 161);
+        label{
+            color: $negro;
+            font-family: $font-raleway;
+            font-weight: 100;
+            font-size: 1em;
+            text-align: left;
+            line-height: 1.5;
+        }
+        input{
+            display: inline-block;
+            background-color: rgb(255, 255, 255);
+            border-bottom: $violeta solid 0.2em;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            margin-bottom: 25px;
+        }
+        input:focus{
+            outline: none;
+        }
+        .mensajeYBoton{
+            .labelMensaje{
+                color: $negro;
+                font-family: $font-raleway;
+                font-weight: 100;
+                font-size: 1em;
+                text-align: right;
+                line-height: 1.5;
+            }
+            textarea {
+                background-color: rgb(255, 255, 255);
+                border-bottom: $violeta;
+                border-bottom-style: solid;
+                color: $negro;
+                font-family: $font-raleway;
+                font-weight: 100;
+                font-size: 0.9em;
+                text-align: left;
+                line-height: 1.2;
+                margin-bottom: 15px;
+                transition: all 0.3s;
+            }
+            textarea:focus{
+                outline: none;
+            }
+            .botonEnviar{
+                background-color: $violeta;
+                color: white;
+                font-family: $font-montserrat;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1em;
+                line-height: 1.5;
+                border-radius: 100px;
+                border-style: hidden;
+                width: 8em;
+                height: 2.5em;
+                transition: ease-in .2s;
+            }
+            .botonEnviar:hover{
+                transform: scale(1.05);
+                box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24);
+                // background-color: $violeta-claro;
+                color: $blanco;
+                font-weight: 600;
+            }
+        }
+    }
+}

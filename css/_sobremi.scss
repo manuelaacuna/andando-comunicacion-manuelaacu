@@ -1,0 +1,136 @@
+.bannerSobreMi{
+    background-image: url(../imagenes/portadas/portada-nosotros.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 500px;
+    }   
+
+.trayectoria{
+    margin-bottom: 70px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    .trayectoria__h2{
+        color: $violeta;
+        font-family: $font-montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 2em;
+        text-align: center;
+        line-height: 1.5;
+        padding: 10px;
+    }
+    .trayectoria__p{
+        color: $negro;
+        margin: 10px;
+        font-family: $font-raleway;
+        font-style: normal;
+        font-weight: 100;
+        font-size: 1em;
+        text-align: center;
+        line-height: 1.5;
+    }
+    .trayectoria__quoteTrayectoria{
+        border: 3px solid $naranja;
+        border-radius: 10px;
+        margin: 10px;
+        margin-bottom: 20px;
+        padding: 10px;
+        color: $naranja;
+        font-family: $font-raleway;
+        font-weight: normal;
+        font-size: 1.3em;
+        text-align: center;
+        line-height: 1.5;
+    }
+}
+.miMision{
+    margin-bottom: 100px;
+    padding: 20px;
+    background-color: $naranja;
+    .miMision__miMisionContenido{
+        display: flex;
+        flex-flow: row wrap;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+    }
+        .miMision__h2{
+            color: $violeta;
+            font-family: $font-montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 2em;
+            text-align: center;
+            line-height: 1.5;
+            padding: 10px;
+            margin-top: 70px;
+        }
+        .miMision__img{
+            margin-bottom: 70px;
+        }
+        .miMisionTexto__p{
+            color: $negro;
+            font-family: $font-raleway;
+            font-style: normal;
+            font-weight: 100;
+            font-size: 1em;
+            text-align: left;
+            line-height: 1.5;
+            display: inline-block;
+            margin-bottom: 70px;
+        }
+    }
+
+/* Mandamientos */
+.mandamientos{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    .alineacionCarrusel{
+        width: 100%;
+        display: flex;
+        justify-content: center;   
+    }
+    .mandamientos__h2{
+        color: #973a5e;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        text-align: center;
+        line-height: 1.5;
+        margin-bottom: 50px;
+    }
+    .mandamientos__mandamiento1{
+        display: inline-block;
+        margin-bottom: 50px;
+        border: 3px #973a5e solid;
+        padding: 15px;
+        width: 80%;
+        margin: 10px;
+        .mandamientos__p{
+            color: #000000;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 200;
+            line-height: 1.5;
+            text-align: center;
+            display: block;
+            margin: 15px;
+        }
+    }
+    .carousel-item{
+        text-align: center;
+    }
+    .carousel-indicators{
+        li{
+            background-color: #f69579;
+            border-radius: 20px;
+            height: 5px;
+        }
+    }
+    .carousel-control-next{
+        margin-left: 50px;
+    }
+    .carousel-control-prev{
+        margin-right: 50px;
+    }
+}
